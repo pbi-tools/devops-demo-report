@@ -1,0 +1,5 @@
+*.pbix
+*.zip
+*.pbit
+query.json
+dataTransforms.json
