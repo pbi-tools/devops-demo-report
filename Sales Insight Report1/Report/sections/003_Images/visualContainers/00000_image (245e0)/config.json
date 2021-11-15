@@ -1,0 +1,36 @@
+{
+  "name": "245e090494797e352eb0",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 122.70676691729322,
+        "y": 554.58646616541353,
+        "z": 2000,
+        "width": 496.84210526315786,
+        "height": 149.17293233082705
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "image",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "imageUrl": {
+              "expr": {
+                "ResourcePackageItem": {
+                  "PackageName": "RegisteredResources",
+                  "PackageType": 1,
+                  "ItemName": "Action_BI_Logo23712042408309397.png"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

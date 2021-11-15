@@ -1,0 +1,36 @@
+{
+  "name": "05021cc2293d4e5070c0",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 132.33082706766916,
+        "y": 125.11278195488721,
+        "z": 0,
+        "width": 487.21804511278191,
+        "height": 333.23308270676688
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "image",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "imageUrl": {
+              "expr": {
+                "ResourcePackageItem": {
+                  "PackageName": "RegisteredResources",
+                  "PackageType": 1,
+                  "ItemName": "Brian_Profile_Photo04628124454256555.jpeg"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "7cf1a85bf77e5e1e0425",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 679.69924812030069,
+        "y": 178.04511278195488,
+        "z": 4000,
+        "width": 452.33082706766913,
+        "height": 228.57142857142856
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "image",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "imageUrl": {
+              "expr": {
+                "ResourcePackageItem": {
+                  "PackageName": "RegisteredResources",
+                  "PackageType": 1,
+                  "ItemName": "1517730417448056028671649127615.jpg"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "name": "dce2093a9f3d2a5fe835",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 205.71428571428569,
+        "y": 458.3458646616541,
+        "z": 1000,
+        "width": 964.81203007518786,
+        "height": 58.94736842105263
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "multiRowCard",
+    "projections": {
+      "Values": [
+        {
+          "queryRef": "Metrics.Brian LinkedIn"
+        },
+        {
+          "queryRef": "Metrics.Mathias LinkedIn"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "m",
+          "Entity": "Metrics",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "m"
+              }
+            },
+            "Property": "Brian LinkedIn"
+          },
+          "Name": "Metrics.Brian LinkedIn"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "m"
+              }
+            },
+            "Property": "Mathias LinkedIn"
+          },
+          "Name": "Metrics.Mathias LinkedIn"
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "categoryLabels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "card": [
+        {
+          "properties": {
+            "barShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataLabels": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "16D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "name": "84686e2e6921e5d45779",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 578.961284230406,
+        "y": 70.103871576959392,
+        "z": 1000,
+        "width": 701.03871576959386,
+        "height": 650.27384324834748,
+        "tabOrder": 0
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "map",
+    "projections": {
+      "Series": [
+        {
+          "queryRef": "Resellers.Reseller Geography.Reseller Country"
+        }
+      ],
+      "Size": [
+        {
+          "queryRef": "Sales Person.Sales Commission"
+        }
+      ],
+      "Category": [
+        {
+          "queryRef": "Resellers.Reseller Geography.Reseller Country",
+          "active": true
+        },
+        {
+          "queryRef": "Resellers.Reseller Address",
+          "active": true
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "s",
+          "Entity": "Sales Person",
+          "Type": 0
+        },
+        {
+          "Name": "r",
+          "Entity": "Resellers",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "r"
+                  }
+                },
+                "Hierarchy": "Reseller Geography"
+              }
+            },
+            "Level": "Reseller Country"
+          },
+          "Name": "Resellers.Reseller Geography.Reseller Country"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "Sales Commission"
+          },
+          "Name": "Sales Person.Sales Commission"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "r"
+              }
+            },
+            "Property": "Reseller Address"
+          },
+          "Name": "Resellers.Reseller Address"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 2,
+          "Expression": {
+            "Measure": {
+              "Expression": {
+                "SourceRef": {
+                  "Source": "s"
+                }
+              },
+              "Property": "Sales Commission"
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "hasDefaultSort": true,
+    "objects": {
+      "legend": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Commission by Reseller Location'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

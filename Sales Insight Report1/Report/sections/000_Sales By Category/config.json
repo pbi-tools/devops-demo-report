@@ -1,0 +1,14 @@
+{
+  "relationships": [
+    {
+      "source": "a2266783b6fdc768389a",
+      "target": "f62b7a4aa025cb235efa",
+      "type": 1
+    },
+    {
+      "source": "d09e9172d8b01eb2d186",
+      "target": "f62b7a4aa025cb235efa",
+      "type": 1
+    }
+  ]
+}

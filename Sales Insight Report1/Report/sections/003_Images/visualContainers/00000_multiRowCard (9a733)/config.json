@@ -1,0 +1,64 @@
+{
+  "name": "9a733a6cfa282e35e889",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 270.6766917293233,
+        "y": 33.684210526315788,
+        "z": 5000,
+        "width": 1009.3233082706766,
+        "height": 102.25563909774435
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "multiRowCard",
+    "projections": {
+      "Values": [
+        {
+          "queryRef": "Metrics.Action BI Toolkit"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "m",
+          "Entity": "Metrics",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "m"
+              }
+            },
+            "Property": "Action BI Toolkit"
+          },
+          "Name": "Metrics.Action BI Toolkit"
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "dataLabels": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

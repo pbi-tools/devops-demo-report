@@ -1,0 +1,36 @@
+{
+  "name": "1a2afbac08220b731f86",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 3000,
+        "width": 751.87969924812023,
+        "height": 194.88721804511277
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "image",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "imageUrl": {
+              "expr": {
+                "ResourcePackageItem": {
+                  "PackageName": "RegisteredResources",
+                  "PackageType": 1,
+                  "ItemName": "Action_BI_Square_Icon16523371354904626.png"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

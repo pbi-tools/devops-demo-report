@@ -1,0 +1,55 @@
+{
+  "id": 0,
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY18SU07",
+            "path": "BaseThemes/CY18SU07.json",
+            "type": 202
+          },
+          {
+            "name": "Classroom",
+            "path": "BuiltInThemes/Classroom.json",
+            "type": 201
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "Brian_Profile_Photo04628124454256555.jpeg",
+            "path": "Brian_Profile_Photo04628124454256555.jpeg",
+            "type": 100
+          },
+          {
+            "name": "Action_BI_Logo23712042408309397.png",
+            "path": "Action_BI_Logo23712042408309397.png",
+            "type": 100
+          },
+          {
+            "name": "Action_BI_Square_Icon16523371354904626.png",
+            "path": "Action_BI_Square_Icon16523371354904626.png",
+            "type": 100
+          },
+          {
+            "name": "1517730417448056028671649127615.jpg",
+            "path": "1517730417448056028671649127615.jpg",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "theme": "Classroom"
+}

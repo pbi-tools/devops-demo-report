@@ -1,0 +1,245 @@
+{
+  "name": "a2266783b6fdc768389a",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 468.84377758164169,
+        "y": 68.9143865842895,
+        "z": 1000,
+        "width": 811.15622241835831,
+        "height": 650.73256840247132,
+        "tabOrder": 1000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "tableEx",
+    "projections": {
+      "Values": [
+        {
+          "queryRef": "Product.Product Thumbnail"
+        },
+        {
+          "queryRef": "Product.Product Color"
+        },
+        {
+          "queryRef": "Product.ProductModel"
+        },
+        {
+          "queryRef": "Product.Product Number"
+        },
+        {
+          "queryRef": "Sales Order.Sum of Sales Amount"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "p",
+          "Entity": "Product",
+          "Type": 0
+        },
+        {
+          "Name": "m",
+          "Entity": "Metrics",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "p"
+              }
+            },
+            "Property": "Thumbnail"
+          },
+          "Name": "Product.Product Thumbnail"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "p"
+              }
+            },
+            "Property": "Model"
+          },
+          "Name": "Product.ProductModel"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "p"
+              }
+            },
+            "Property": "Color"
+          },
+          "Name": "Product.Product Color"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "p"
+              }
+            },
+            "Property": "Number"
+          },
+          "Name": "Product.Product Number"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "m"
+              }
+            },
+            "Property": "Sum of Sales Amount"
+          },
+          "Name": "Sales Order.Sum of Sales Amount"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 2,
+          "Expression": {
+            "Measure": {
+              "Expression": {
+                "SourceRef": {
+                  "Source": "m"
+                }
+              },
+              "Property": "Sum of Sales Amount"
+            }
+          }
+        }
+      ]
+    },
+    "columnProperties": {
+      "Sales Order.Sum of Sales Amount": {
+        "displayName": "Sales Amount"
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "149.35164835164835D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Product.Product Thumbnail"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "158.82626093230823D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sales Order.Sum of Sales Amount"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "175.95240605504497D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Product.Product Number"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "210.24197116786456D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Product.ProductModel"
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "keepLayerOrder": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Sales by Model and Colour'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
