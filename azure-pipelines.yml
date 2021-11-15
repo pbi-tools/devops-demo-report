@@ -1,0 +1,33 @@
+
+trigger:
+- main
+- uat
+- release/*
+
+variables:
+- name: ENVIRONMENT
+  ${{ if eq(variables['Build.SourceBranchName'], 'main') }}:
+    value: C_Production
+  ${{ if eq(variables['Build.SourceBranchName'], 'uat') }}:
+    value: B_Staging
+  ${{ if startsWith(variables['Build.SourceBranch'], 'refs/heads/Release/') }}:
+    value: A_Development
+
+jobs:
+  # Track deployments on the environment.
+- deployment: Deploy
+  displayName: Deploy to Environment
+  pool:
+    vmImage: windows-2019
+  # Creates an environment if it doesn't exist.
+  environment: $(ENVIRONMENT)
+  strategy:
+    # Default deployment strategy, more coming...
+    runOnce:
+      deploy:
+        steps:
+        - checkout: self 
+        - script: .\.tool\pbi-tools.core.exe deploy . "Sales Insight Report 1" $(ENVIRONMENT)
+          displayName: 'pbi-tools Deploy'
+          env:
+            PBI_CLIENT_SECRET: $(PBI_CLIENT_SECRET)

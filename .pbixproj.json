@@ -1,0 +1,37 @@
+{
+  "version": "0.9",
+  "created": "2021-10-17T14:45:53.9231938+01:00",
+  "lastModified": "2021-10-17T14:45:55.0022697+01:00",
+  "deployments": {
+    "Sales Insight Report 1": {
+      "mode": "Report",
+      "source": {
+        "type": "Folder",
+        "path": "./Sales Insight Report1"
+      },
+      "authentication": {
+        "type": "ServicePrincipal",
+        "tenantId": "pbitools.org",
+        "clientId": "b477e617-78ad-48dc-bdf2-719639d8bf75",
+        "clientSecret": "%PBI_CLIENT_SECRET%"
+      },
+      "parameters": {},
+      "options": {
+        "nameConflict": "CreateOrOverwrite"
+      },
+      "logging": {},
+      "environments": {
+        "A_Development": {
+          "disabled": false,
+          "workspaceId": "82d08e54-8dd8-4af1-84fd-013c008f695d"
+        },
+        "B_Staging": {
+          "workspaceId": "9f2032e9-6189-4f45-83a7-d9b15b8709d4"
+        },
+        "C_Production": {
+          "workspaceId": "67ec2e2c-daf7-4def-8bab-fbdbb1212587"
+        }
+      }
+    }
+  }
+}
