@@ -1,6 +1,6 @@
-# Action BI Toolkit | pbi-tools Deployment Demo
+# pbi-tools Deployment Demo: https://pbi.tools/devops/
 
-Using `pbi-tools deploy` with Azure Pipelines.
+Using [`pbi-tools deploy`](https://pbi.tools/cli/usage.html#deploy) with Azure Pipelines.
 
 ## Setup
 
